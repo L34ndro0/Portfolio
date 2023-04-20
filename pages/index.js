@@ -1,5 +1,5 @@
 import Layout from "../componets/Layout"
-import { skills, about, name, title } from "../profile"
+import { skills, about, name, title, experiences } from "../profile"
 
 const Index = () => (
     <Layout>
@@ -28,18 +28,16 @@ const Index = () => (
                     <div className="card-body">
                         <h3>Skills</h3>
                         {
-                            skills.map(({skill,percentage},index) => (
+                            skills.map(({ skill, percentage }, index) => (
                                 <div className="py-3" key={index}>
                                     <h5>{skill}</h5>
                                     <div className="progress">
-                                        <div className="progress-bar" role="progressbar" style={{width: `${percentage}%`}}>
-
-                                        </div>
+                                        <div className="progress-bar" role="progressbar" style={{ width: `${percentage}%` }}/>                                        
                                     </div>
                                 </div>
                             ))
                         }
-                        
+
                     </div>
                 </div>
             </div>
@@ -47,6 +45,19 @@ const Index = () => (
                 <div className="card bg-light">
                     <div className="card-body">
                         <h3>Experience</h3>
+                        <ul>
+                        {
+                            experiences.map(({ title, charge, description, from, to }, index) => (
+                                <li className="py-3" key={index}>
+                                    <h5>{title}</h5>
+                                    <h5>{from}-{to}</h5>
+                                    <p>{charge}</p>
+                                    <p>{description}</p>
+                                </li>
+                            ))
+                        }
+                        </ul>
+
                     </div>
                 </div>
             </div>
