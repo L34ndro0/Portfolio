@@ -27,11 +27,11 @@ const Index = () => (
             <div className="col-md-4">
                 <div className="card bg-light">
                     <div className="card-body">
-                        <h3>Skills</h3>
+                        <h4>Skills</h4>
                         {
                             skills.map(({ skill, percentage }, index) => (
                                 <div className="py-3" key={index}>
-                                    <h5>{skill}</h5>
+                                    <h6>{skill}</h6>
                                     <div className="progress">
                                         <div className="progress-bar" role="progressbar" style={{ width: `${percentage}%` }} />
                                     </div>
@@ -45,13 +45,13 @@ const Index = () => (
             <div className="col-md-8">
                 <div className="card bg-light">
                     <div className="card-body">
-                        <h3>Experience</h3>
+                        <h4>Experience</h4>
                         <ul>
                             {
                                 experiences.map(({ title, charge, description, from, to }, index) => (
                                     <li className="py-3" key={index}>
                                         <h5>{title}</h5>
-                                        <h5>{from}-{to}</h5>
+                                        <h6>{from}-{to}</h6>
                                         <p>{charge}</p>
                                         <p>{description}</p>
                                     </li>
@@ -68,21 +68,21 @@ const Index = () => (
                 <div className="card card-body bg-dark">
                     <div className="row">
                         <div className="col-md-12">
-                            <h1 className="text-center text-light">Portfolio</h1>
+                            <h2 className="text-center text-light">Portfolio</h2>
                         </div>
 
                         {
-                            projects.map(({title,description,image,url}, index) => (
-                                <div className="col-md-4 p-2" key={index}>
+                            projects.map(({ title, description, image, url }, index) => (
+                                <div className="col-md-4 p-2 " style={{height: '600px'}} key={index}>
                                     <div className="card h-100">
-                                        <div className="overflow">
-                                            <img src={image} alt="" className="card-img-top" />
+                                        <div className="overflow w-100 d-flex align-items-center  justify-content-center ">
+                                            <img src={image} alt="" className="card-img-top"/>
                                         </div>
-                                        <div className="card-body">
-                                            <h3>{title}</h3>
+                                        <div className="card-body h-50 ">
+                                            <h4>{title}</h4>
                                             <p>{description}</p>
-                                            <Link className="navbar-brand" href={url}>Link to page</Link>
                                         </div>
+                                        <Link className="navbar-brand text-center" href={url}>Link to page</Link>
                                     </div>
                                 </div>
                             ))
