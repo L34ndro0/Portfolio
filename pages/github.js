@@ -19,7 +19,7 @@ const Github = ({ user, repos }) => {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row py-2">
                 <div className="col-md-12">
                     <div className="card card-body bg-dark">
                         <div className="row">
