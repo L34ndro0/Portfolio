@@ -82,7 +82,7 @@ const Index = () => (
                                             <h4>{title}</h4>
                                             <p>{description}</p>
                                         </div>
-                                        <Link className="navbar-brand text-center" href={url}>Link to page</Link>
+                                        <Link className="navbar-brand text-center" href={url} target="_blank">Link to page</Link>
                                     </div>
                                 </div>
                             ))
