@@ -43,7 +43,7 @@ export const about = <p>Full Stack Developer con background en inteligencia arti
     En general, mi perfil como desarrollador full stack con estudios en curso en inteligencia artificial y
     experiencia en gestión de producción, me posiciona como un profesional versátil y capacitado para
     enfrentar distintos desafíos en el ámbito tecnológico. Estoy emocionado por las oportunidades que el
-    futuro me depara en esta carrera tan dinámica y en constante evolución
+    futuro me depara en esta carrera tan dinámica y en constante evolución.
 </p>
 export const name = 'Leandro Carrizo'
 export const title = 'Full stack web developer'

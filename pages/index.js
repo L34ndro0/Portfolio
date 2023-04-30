@@ -9,14 +9,22 @@ const Index = () => (
                 <div className=" card card-body bg-secondary">
                     <div className="row">
                         <div className="col-md-4">
-                            <img src="Leandrodev.b985dffc235f2fb06d37.jpg" alt="" className="img-fluid" />
+                            <img src="Leandrodev.b985dffc235f2fb06d37.jpg" alt="" className="img-fluid mt-4"  />
                         </div>
                         <div className="col-md-8">
                             <h2>{name}</h2>
                             <h3>{title}</h3>
                             <h5 >Bio</h5>
                             {about}
-                            <a href="/hireme">Hire Me</a>
+                            <div className="text-center d-flex align-items-center  justify-content-end">                                
+                                <a href="https://www.linkedin.com/in/leandro-javier-carrizo/" target="_blank" >
+                                    <img src="pngegg.png" alt="imagen de linkedin" style={{ width: '80px' }} />
+                                </a>
+                                <a href="mailto:leandropuntomp3@gmail.com" target="_blank">
+                                    <img src="google.png" alt="imagen de google" style={{ width: '60px', marginLeft:'20px' }} />
+                                </a>
+                                <a href="https://wa.me/543416756110" target="_blank"> <img alt="Chat on WhatsApp" src="ws.png" style={{ width: '100px' }}/> </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -73,10 +81,10 @@ const Index = () => (
 
                         {
                             projects.map(({ title, description, image, url }, index) => (
-                                <div className="col-md-4 p-2 " style={{height: '600px'}} key={index}>
+                                <div className="col-md-4 p-2 " style={{ height: '600px' }} key={index}>
                                     <div className="card h-100">
                                         <div className="overflow w-100 d-flex align-items-center  justify-content-center ">
-                                            <img src={image} alt="" className="card-img-top"/>
+                                            <img src={image} alt="" className="card-img-top" />
                                         </div>
                                         <div className="card-body h-50 ">
                                             <h4>{title}</h4>
