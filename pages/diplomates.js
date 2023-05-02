@@ -1,5 +1,5 @@
 import Layout from "../componets/Layout"
-import PDFViewer from "../componets/pdfviewer"
+import PDFViewer from "../componets/Pdfviewer"
 import { useState, useEffect } from "react";
 
 const Diplomates = () => {
@@ -7,8 +7,7 @@ const Diplomates = () => {
     const [pageWidth, setPageWidth] = useState(0);
 
     useEffect(() => {
-        setPageWidth(window.innerWidth);
-        if (pageWidth > 1024) setPageWidth(700)
+        setPageWidth(window.innerWidth);       
     }, []);   
 
     return (

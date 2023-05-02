@@ -35,7 +35,7 @@ const Github = ({ user, repos }) => {
                                                 <img src='https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU' alt="" className="card-img-top" />
                                             </div>
                                             <div className="card-body h-50 text-center">
-                                                <h7>{name}</h7>
+                                                <h5>{name}</h5>
                                             </div>
                                             <a className="navbar-brand text-center" href={html_url} target="_blank">Link to repo</a>
                                         </div>
