@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
 
             <footer className="bg-dark text-light text-center">
                 <div className="py-2">
-                    <h7>&copy; Leandro Carrizo Portfolio with Next.JS</h7>
+                    <h6>&copy; Leandro Carrizo Portfolio with Next.JS</h6>
                     <p className="py-2">{new Date().getFullYear()}</p>
                     <p>All rights Reservered</p>
                 </div>
