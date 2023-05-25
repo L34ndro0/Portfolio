@@ -88,7 +88,7 @@ export const projects = [
         title: 'Pokemon Cards',
         description: 'Proyecto individual donde use API externa con tematica de Pokemon, creada con React, CSS module, Express.js, Sequealize, PostgreSQL, GitHub. ',
         image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png',
-        url: 'https://pipokemon-production-bf56.up.railway.app/'
+        url: 'https://pi-pokemon-mocha.vercel.app/'
     },
     {
         title: 'Rick and Morty',
