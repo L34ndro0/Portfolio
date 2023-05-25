@@ -1,5 +1,5 @@
 import Layout from "../componets/Layout"
-import PDFviewer from "../componets/PDFviewer"
+import PDFviewer from '../componets/PDFviewer'
 import { useState, useEffect } from "react";
 
 const Diplomates = () => {
