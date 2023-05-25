@@ -1,5 +1,5 @@
 import Layout from "../componets/Layout";
-import PDFViewer from "../componets/Pdfviewer";
+import Pdfviewer from "../componets/Pdfviewer";
 import { useEffect, useState } from "react";
 
 const CV = () => {
@@ -14,7 +14,7 @@ const CV = () => {
         <Layout>
             <div className="container">
                 <div className="d-flex flex-column justify-content-center align-items-center mt-2" >
-                    <PDFViewer url="CV.pdf" width={pageWidth - 50} />
+                    <Pdfviewer url="CV.pdf" width={pageWidth - 50} />
                 </div>
             </div>
         </Layout>
