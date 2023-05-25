@@ -6,7 +6,7 @@ import 'react-pdf/dist/esm/Page/TextLayer.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-function PDFViewer({ url, width }) {
+function Pdfviewer({ url, width }) {
     if (width > 768) width = 960
 
     const [numPages, setNumPages] = useState(null);
@@ -32,4 +32,4 @@ function PDFViewer({ url, width }) {
     );
 }
 
-export default PDFViewer;
+export default Pdfviewer;
