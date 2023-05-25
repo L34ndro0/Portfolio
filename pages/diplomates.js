@@ -1,5 +1,5 @@
 import Layout from "../componets/Layout"
-import Pdfviewer from "../componets/Pdfviewer"
+import PDFviewer from "../componets/PDFviewer"
 import { useState, useEffect } from "react";
 
 const Diplomates = () => {
@@ -15,10 +15,10 @@ const Diplomates = () => {
             <div className="container" >
                 <div className="d-flex flex-column justify-content-center align-items-center">
                     <div className="mt-2" >
-                        <Pdfviewer url="henry.pdf" width={pageWidth - 50} />
+                        <PDFviewer url="henry.pdf" width={pageWidth - 50} />
                     </div>
                     <div className="mt-2">
-                        <Pdfviewer url="oracleOne.pdf" width={pageWidth -  50} />
+                        <PDFviewer url="oracleOne.pdf" width={pageWidth -  50} />
                     </div>
                 </div>
             </div>
